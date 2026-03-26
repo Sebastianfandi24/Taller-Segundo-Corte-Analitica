@@ -59,7 +59,7 @@ dev.off()
 # PlayStation y Xbox son las plataformas más populares
 # con 135 transacciones cada una, seguidas por PC(140)
 # y Nintendo (100).
-
+ventas_plat <- sort(table(ventas$plataforma), decreasing=TRUE)
 guardar_grafica("02_barras_plataformas.png")
 barplot(ventas_plat, col=col_plat[names(ventas_plat)], border="white",
         main="Número de Ventas por Plataforma", xlab="Plataforma",
