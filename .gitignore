@@ -172,3 +172,5 @@ poetry.toml
 
 # LSP config files
 pyrightconfi
+
+.DS_Store
